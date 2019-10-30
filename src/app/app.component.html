@@ -1,0 +1,18 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<p-calendar
+    view="month"
+    [yearNavigator]="true"
+    yearRange="2000:2030"
+    [(ngModel)]="datesRangeFilter"
+    showButtonBar="true"
+    [showTransitionOptions]="'0ms'"
+    [hideTransitionOptions]="'0ms'"
+    placeholder="Select time period"
+    selectionMode="range"
+    dateFormat="mm/yy">
+   <p-header>Header</p-header>
+   <p-footer>Footer</p-footer>
+</p-calendar>
